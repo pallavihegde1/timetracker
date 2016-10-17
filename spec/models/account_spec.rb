@@ -1,3 +1,4 @@
+require 'rails_helper'
 require 'spec_helper'
 
 describe Account do
@@ -7,7 +8,7 @@ describe Account do
     it { should validate_presence_of :subdomain }
     it { should validate_uniqueness_of :subdomain }
 
-    it { should allow_value('bolandrm').for(:subdomain) }
+    it { should allow_value('pallavi').for(:subdomain) }
     it { should allow_value('test').for(:subdomain) }
 
     it { should_not allow_value('www').for(:subdomain) }
