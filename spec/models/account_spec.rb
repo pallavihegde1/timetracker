@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'spec_helper'
 
-describe Account do
+RSpec.describe Account, type: :model do
   describe 'validations' do
     it { should validate_presence_of :owner }
     
